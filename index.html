@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum Moment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Maximum Bending Moment </h1>
+        <h2>for Simply Supported Beam under UDL</h2>
+        <p>UDL Load Kip-ft
+            <input onchange="calculateMoment()" class="input" type="number" id="load" placeholder="10">
+        </p>
+        <p>Span ft
+            <input onchange="calculateMoment()" class="input" type="number" id="span" placeholder="5">
+        </p>
+        <p class="maxMoment" id="maxMoment">Maximum Bending Moment Kip-ft/ft:</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
